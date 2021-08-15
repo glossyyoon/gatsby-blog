@@ -4,6 +4,18 @@ module.exports = {
     title: "Gatsby Blog",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-antd",
+      options: {
+        style: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+      },
+    },
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -27,7 +39,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "src/images/",
       },
       __key: "images",
     },
@@ -35,7 +47,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: "src/pages/",
       },
       __key: "pages",
     },

@@ -3634,7 +3634,7 @@ var plugins = [{
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "53aa06cf17e4239d0dba6ffd09854e02"
+    "cacheDigest": "1031dd8dc57727f3d1c0fd9d62354801"
   }
 }, {
   name: 'gatsby-plugin-mdx',
@@ -5885,6 +5885,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Object.assign({}));
+
+/***/ }),
+
+/***/ "./src/html.js":
+/*!*********************!*\
+  !*** ./src/html.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HTML)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* eslint-disable react/require-default-props */
+
+/* eslint-disable react/no-danger */
+
+/* eslint-disable react/forbid-prop-types */
+
+/* eslint-disable jsx-a11y/html-has-lang */
+
+
+function HTML({
+  htmlAttributes,
+  headComponents,
+  bodyAttributes,
+  preBodyComponents,
+  postBodyComponents,
+  body
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("html", htmlAttributes, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("head", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    charSet: "utf-8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    httpEquiv: "x-ua-compatible",
+    content: "ie=edge"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+  }), headComponents), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("body", bodyAttributes, preBodyComponents, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    key: "body",
+    id: "___gatsby",
+    dangerouslySetInnerHTML: {
+      __html: body
+    }
+  }), postBodyComponents));
+}
+HTML.propTypes = {
+  htmlAttributes: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object),
+  headComponents: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().array),
+  bodyAttributes: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object),
+  preBodyComponents: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().array),
+  body: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
+  postBodyComponents: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().array)
+};
 
 /***/ }),
 
@@ -13588,7 +13647,7 @@ const testRequireError = (moduleName, err) => {
 let Html;
 
 try {
-  Html = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+  Html = __webpack_require__(/*! ../src/html */ "./src/html.js");
 } catch (err) {
   if (testRequireError(`../src/html`, err)) {
     Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
